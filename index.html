@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limoo</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="container">
+        <div class="row">
+          <div class="intro col-12">
+            <h1>Tasks <span id="task"></span></h1>
+          </div>
+        </div>
+        <!-- task input -->
+        <div class="input-group mb-3">
+          <input
+            id="userInput"
+            type="text"
+            maxlength="30"
+            placeholder="New task"
+          />
+          <div class="input-group-append">
+            <button
+              id="enter"
+              class="btn btn-outline-secondary btn-primary"
+              type="button"
+            >
+              <i class="fas fa-plus"></i>
+              Add
+            </button>
+          </div>
+        </div>
+        <!-- nav btn -->
+        <div id="btn-holder">
+          <button id="btn-completed" class="btn">
+            <i class="fas fa-check"></i>clear completed
+          </button>
+          <button id="btn-clear" class="btn">
+            <i class="fa fa-trash" aria-hidden="true"></i>clear all
+          </button>
+        </div>
+        <!-- Empty List -->
+        <div class="row">
+          <div class="listItems col-12">
+            <ul class="input-group mb-3"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
